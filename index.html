@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Camping</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Equipements <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vetements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Collection été 2020</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- caroussel-->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="10000">
+          <img src="./res/tente.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-interval="2000">
+          <img src="./res/table.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./res/clothes.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleInterval"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleInterval"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Shpping card-->
+    <div class="container my-5">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12">
+          <div class="card shopping-cart">
+            <div class="card-body p-4">
+              <!-- Grid row -->
+              <div class="row" style="padding-left: 25%">
+                <!-- Grid column -->
+                <div class="col-lg-6">
+                  <h3
+                    class="mb-4 py-2 text-center font-weight-bold text-uppercase"
+                  >
+                    Your products
+                  </h3>
+
+                  <div class="media mb-3">
+                    <img
+                      style="width: 250px"
+                      class="d-flex mr-3"
+                      src="./res/sac.webp"
+                      alt="Generic placeholder image"
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-0 font-weight-bold text-primary">
+                        Sac à dos
+                      </h5>
+                      <p class="font-weight-bold grey-text mb-2">
+                        SAC À DOS DE TREKKING EN MONTAGNE HOMME - TREK 100
+                        EASYFIT - 50L NOIR
+                      </p>
+                      <div class="d-flex justify-content-around">
+                        <div class="d-flex">
+                          <p class="price">1000</p>
+                          <spam>$</spam>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                          <button class="btn">
+                            <div class="plus">
+                              <img
+                                style="width: 20px"
+                                src="./res/plus.ico"
+                                alt="plus"
+                              />
+                            </div>
+                          </button>
+                          <p class="quantity">0</p>
+
+                          <button class="btn">
+                            <div class="moins">
+                              <img
+                                style="width: 20px"
+                                src="./res/minus.png"
+                                alt="minus"
+                              />
+                            </div>
+                          </button>
+                          <button class="btn">
+                            <div class="trash">
+                              <img
+                                style="width: 20px"
+                                src="./res/tradh.png"
+                                alt="tradh"
+                              />
+                            </div>
+                          </button>
+                          <button class="btn">
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="media mb-3">
+                    <img
+                      style="width: 250px"
+                      class="d-flex mr-3"
+                      src="./res/tente.webp"
+                      alt="Generic placeholder image"
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-0 font-weight-bold text-primary">Tente</h5>
+                      <p class="font-weight-bold grey-text mb-2">
+                        TENTE DE CAMPING - 2 SECONDS - FRESH&BLACK - 3 PERSONNES
+                      </p>
+                      <div class="d-flex justify-content-around">
+                        <div class="d-flex">
+                          <p class="price">1000</p>
+                          <spam>$</spam>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                          <button class="btn">
+                            <div class="plus">
+                              <img
+                                style="width: 20px"
+                                src="./res/plus.ico"
+                                alt="plus"
+                              />
+                            </div>
+                          </button>
+                          <p class="quantity">0</p>
+
+                          <button class="btn">
+                            <div class="moins">
+                              <img
+                                style="width: 20px"
+                                src="./res/minus.png"
+                                alt="minus"
+                              />
+                            </div>
+                          </button>
+                          <button class="btn">
+                            <div class="trash">
+                              <img
+                                style="width: 20px"
+                                src="./res/tradh.png"
+                                alt="tradh"
+                              />
+                            </div>
+                          </button>
+                          <button class="btn">
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media mb-3">
+                    <img
+                      style="width: 250px"
+                      class="d-flex mr-3"
+                      src="./res/chaussures.webp"
+                      alt="Generic placeholder image"
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-0 font-weight-bold text-primary">
+                        chaussures
+                      </h5>
+                      <p class="font-weight-bold grey-text mb-2">
+                        CHAUSSURES DE TREKKING EN MONTAGNE HOMME - TREK 100
+                        EASYFIT - 50L NOIR
+                      </p>
+                      <div class="d-flex justify-content-around">
+                        <div class="d-flex">
+                          <p class="price">1000</p>
+                          <spam>$</spam>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                          <button class="btn">
+                            <div class="plus">
+                              <img
+                                style="width: 20px"
+                                src="./res/plus.ico"
+                                alt="plus"
+                              />
+                            </div>
+                          </button>
+                          <p class="quantity">0</p>
+
+                          <button class="btn">
+                            <div class="moins">
+                              <img
+                                style="width: 20px"
+                                src="./res/minus.png"
+                                alt="minus"
+                              />
+                            </div>
+                          </button>
+                          <button class="btn">
+                            <div class="trash">
+                              <img
+                                style="width: 20px"
+                                src="./res/tradh.png"
+                                alt="tradh"
+                              />
+                            </div>
+                          </button>
+                          <button class="btn">
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="text-align: center; width: 20%; margin: 3% 40%"
+      class="border border-danger"
+    >
+      <h1>Prix Total</h1>
+      <p id="prixTotal">0</p>
+    </div>
+    <script src="./js/file.js"></script>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+</html>
